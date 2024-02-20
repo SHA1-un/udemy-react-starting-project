@@ -1,4 +1,5 @@
 import CoreConcept from './CoreConcept.jsx';
+import Section from './Section.jsx'
 import { CORE_CONCEPTS } from '../data.js'
 
 export default function CoreConcepts() {
@@ -15,8 +16,7 @@ export default function CoreConcepts() {
     //     })
     // }
     return (
-        <section id='core-concepts'>
-            <h2>Core Concepts</h2>
+        <Section title={"Core Concepts"} id='core-concepts'>
             <ul>
                 {/* Example: Using a function to build the items dynamically */}
                 {/* {buildCoreConceptItems} */}
@@ -34,6 +34,6 @@ export default function CoreConcepts() {
                     <CoreConcept {...CORE_CONCEPTS[2]}/>
                     <CoreConcept {...CORE_CONCEPTS[3]} /> */}
             </ul>
-        </section>
+        </Section>
     )
 }
